@@ -30,7 +30,7 @@ end
 else
 print('\27[1;34mلم يتم حفظ التوكن جرب مره اخره \nToken not saved, try again')
 end 
-os.execute('lua5.2 LiOn.lua')
+os.execute('lua5.2 Lion.lua')
 end
 if not Redis:get(SshId.."Info:Redis:User") then
 io.write('\27[1;31mارسل معرف المطور الاساسي الان \nDeveloper UserName saved ↡\n\27[0;39;49m')
@@ -41,7 +41,7 @@ Redis:set(SshId.."Info:Redis:User",UserSudo)
 else
 print('\n\27[1;34mلم يتم حفظ معرف المطور الاساسي \nDeveloper UserName not saved\n')
 end 
-os.execute('lua5.2 LiOn.lua')
+os.execute('lua5.2 Lion.lua')
 end
 if not Redis:get(SshId.."Info:Redis:User:ID") then
 io.write('\27[1;31mارسل ايدي المطور الاساسي الان \nDeveloper ID saved ↡\n\27[0;39;49m')
@@ -52,7 +52,7 @@ Redis:set(SshId.."Info:Redis:User:ID",UserId)
 else
 print('\n\27[1;34mلم يتم حفظ ايدي المطور الاساسي \nDeveloper ID not saved\n')
 end 
-os.execute('lua5.2 LiOn.lua')
+os.execute('lua5.2 Lion.lua')
 end
 local Informationlua = io.open("Information.lua", 'w')
 Informationlua:write([[
@@ -68,7 +68,7 @@ local LiOn = io.open("LiOn", 'w')
 LiOn:write([[
 cd $(cd $(dirname $0); pwd)
 while(true) do
-sudo lua5.2 LiOn.lua
+sudo lua5.2 Lion.lua
 done
 ]])
 LiOn:close()
@@ -5050,7 +5050,7 @@ SudoId = ]]..UserId_Info.id..[[
 ]])
 Informationlua:close()
 luatele.sendText(msg_chat_id,msg_id,"\n❆︙تم تغيير المطور الاساسي اصبح على : [@"..text:gsub('@','').."]","md",true)  
-dofile('LiOn.lua')  
+dofile('Lion.lua')  
 return false
 end
 end
@@ -5066,8 +5066,8 @@ if text == 'تحديث السورس' or text == 'تحديث السورس ❆' th
 if not msg.ControllerBot then 
 return luatele.sendText(msg_chat_id,msg_id,'\n*❆︙هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
-os.execute('rm -rf LiOn.lua')
---download('http://45.32.238.150/Mero/LiOn.lua','LiOn.lua')
+os.execute('rm -rf Lion.lua')
+--download('http://45.32.238.150/Mero/Lion.lua','Lion.lua')
 return luatele.sendText(msg_chat_id,msg_id,'\n*❆︙تم تحديث السورس * ',"md",true)  
 end
 if text == "مسح تخزين البوت" or text == "مسح تخزين البوت ❆" then
@@ -22750,7 +22750,7 @@ end
 print('Chat Id : '..msg_chat_id)
 print('User Id : '..msg_user_send_id)
 luatele.sendText(msg_chat_id,msg_id, "❆︙ تم تحديث الملفات ♻","md",true)
-dofile('LiOn.lua')  
+dofile('Lion.lua')  
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if not msg.ControllerBot then 
@@ -24106,7 +24106,7 @@ end
 print('Chat Id : '..msg_chat_id)
 print('User Id : '..msg_user_send_id)
 luatele.sendText(msg_chat_id,msg_id, "❆︙ تم تحديث الملفات ♻","md",true)
-dofile('LiOn.lua')  
+dofile('Lion.lua')  
 end
 if text == '/start' then
 Redis:sadd(LiOn..'LiOn:Num:User:Pv',msg.sender_id.user_id)  
