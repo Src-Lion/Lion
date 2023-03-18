@@ -1530,7 +1530,7 @@ local UserInfo = luatele.getUser(msg.sender_id.user_id)
 if msg.sender_id.user_id ~= 5402433563 then 
 
 local names = (UserInfo.first_name or '...')..(UserInfo.last_name or '...')
-if names and  names:find("🇹🇷⌯𝗟ََ𝗶ََ𝗢َ𝗻َِ/-أࢦࢦـهم قوه") then
+if names and  names:find("𝐒𝐎𝐅𝐈") then
 luatele.deleteMessages(msg.chat_id,{[1]= msg.id})
 return luatele.sendText(msg_chat_id,0,'[عذرا ممنوع انتحال اسم مطور السورس](tg://user?id='..msg.sender_id.user_id..')',"md")
 end
@@ -5413,7 +5413,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"GC_GZ"}'
+Get_Json = Get_Json..'"Dev":"nnnrnf"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -5572,7 +5572,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"GC_GZ"}'
+Get_Json = Get_Json..'"Dev":"nnnrnf"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -11504,7 +11504,7 @@ end
 
 
 if text == 'الاصدار' then
-luatele.sendText(msg_chat_id,msg_id,'*✶ : mero source 64 : 8.4.6*',"md",true)  
+luatele.sendText(msg_chat_id,msg_id,'*✶ : Lion source 64 : 8.4.6*',"md",true)  
 end
 if text == "الساعه" or text == "الوقت" then
 local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
@@ -12041,7 +12041,7 @@ end
 
 
 if text == 'مطور السورس' then  
-local UserId_Info = luatele.searchPublicChat("GC_GZ")
+local UserId_Info = luatele.searchPublicChat("nnnrnf")
 if UserId_Info.id then
 local UserInfo = luatele.getUser(UserId_Info.id)
 local InfoUser = luatele.getUserFullInfo(UserId_Info.id)
@@ -22221,7 +22221,7 @@ luatele.sendText(msg.chat_id,msg.id,'*• اليوتيوب معطل*',"md",true)
 return false 
 end
 local search = text:match("^بحث (.*)$")
-local j = json:decode(requestt("https://anubis.fun/api/yt.php?q="..URL.escape(search)..""))
+local j = json:decode(requestt("http://95.179.146.117/yt?q="..URL.escape(search)..""))
 local datar = {data = {{text = "قناه السورس" , url = 'http://t.me/otlop12'}}}
 for i = 1,6 do
 link = "http://youtu.be/"..j[i].id
@@ -22245,7 +22245,7 @@ if Redis:get(LiOn.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp3" then
 Redis:del(LiOn.."youtube"..msg.sender_id.user_id..msg_chat_id)
 local rep = msg.id/2097152/0.5
 local m = json:decode(requestt("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/youtube7odabot/7951&reply_to_message_id="..rep)).result.message_id
-local se = requestt("https://anubis.fun/api/yt.php?q="..URL.escape(text))
+local se = requestt("http://95.179.146.117/yt?q="..URL.escape(text))
 local j = JSON.decode(se)
 local link = "http://youtu.be/"..j[1].id
 local title = j[1].title
@@ -22282,7 +22282,7 @@ end
 if Redis:get(LiOn.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp4" then
 local rep = msg.id/2097152/0.5
 local m = json:decode(requestt("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/youtube7odabot/7951&reply_to_message_id="..rep)).result.message_id
-local se = requestt("https://anubis.fun/api/yt.php?q="..URL.escape(text))
+local se = requestt("http://95.179.146.117/yt?q="..URL.escape(text))
 local j = JSON.decode(se)
 local link = "http://youtu.be/"..j[1].id
 local title = j[1].title
@@ -22438,10 +22438,10 @@ keyboard.inline_keyboard = {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 'https://t.me/JJDD8'}, 
 },
 {
-{text = 'بوت التواصل', url = 'http://t.me/GC_GZBOT'}, 
+{text = 'بوت التواصل', url = 'http://t.me/nnnrnfBOT'}, 
 },
 {
-{text = 'مطور السورس', url = 't.me/GC_GZ'}, 
+{text = 'مطور السورس', url = 't.me/nnnrnf'}, 
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -22450,10 +22450,10 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=
 𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒 
 ⊱━━━━⊰✾⊱━━━━⊰
 [𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒 𖤍](t.me/JJDD8)
-[𖤍 𝐋𝐈𝐎𝐍 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𖤍](t.me/JJDD80)
-[𖤍  𝐃𝐄𝐕 𝐇𝐀𝐈𝐃𝐄𝐑 𖤍](t.me/GC_GZ)
+[𖤍 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𖤍](t.me/JJDD80)
+[𖤍  𝐃𝐄𝐕 𝐒𝐎𝐅𝐈 𖤍](t.me/nnnrnf)
 ⊱━━━━⊰✾⊱━━━━⊰ 
-[𖤍 𝐎𝐑𝐃𝐄𝐑 𝐘𝐎𝐔𝐑 𝐏𝐎𝐓 𖤍](t.me/GC_GZ)
+[𖤍 𝐎𝐑𝐃𝐄𝐑 𝐘𝐎𝐔𝐑 𝐏𝐎𝐓 𖤍](t.me/nnnrnf)
 ]]).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Addictive then
@@ -24502,7 +24502,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'لتنصيب بوت', url = 't.me/GC_GZ'}, 
+{text = 'لتنصيب بوت', url = 't.me/nnnrnf'}, 
 },
 {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 't.me/JJDD8'}, 
@@ -24518,7 +24518,7 @@ keyboard.inline_keyboard = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'لتنصيب بوت', url = 't.me/GC_GZ'}, 
+{text = 'لتنصيب بوت', url = 't.me/nnnrnf'}, 
 },
 {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 't.me/JJDD8'}, 
@@ -29341,10 +29341,11 @@ end
 
 end
 end
-Redis:sadd(LiOn.."eza3a",Token.."&"..LiOn)
-Redis:set("@"..UserBot,LiOn.."&".."@"..UserBot.."$@"..UserSudo.."+"..Token)
+
+
 Merotele.run(CallBackLua)
  
+
 
 
 
