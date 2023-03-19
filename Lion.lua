@@ -1530,7 +1530,7 @@ local UserInfo = luatele.getUser(msg.sender_id.user_id)
 if msg.sender_id.user_id ~= 5402433563 then 
 
 local names = (UserInfo.first_name or '...')..(UserInfo.last_name or '...')
-if names and  names:find("𝐒𝐎𝐅𝐈") then
+if names and  names:find("حيِّدِڒٍ𖤍أّلَبِأّبِلَيِّ") then
 luatele.deleteMessages(msg.chat_id,{[1]= msg.id})
 return luatele.sendText(msg_chat_id,0,'[عذرا ممنوع انتحال اسم مطور السورس](tg://user?id='..msg.sender_id.user_id..')',"md")
 end
@@ -5413,7 +5413,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"nnnrnf"}'
+Get_Json = Get_Json..'"Dev":"GC_GZ"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -5572,7 +5572,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"nnnrnf"}'
+Get_Json = Get_Json..'"Dev":"GC_GZ"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -12041,7 +12041,7 @@ end
 
 
 if text == 'مطور السورس' then  
-local UserId_Info = luatele.searchPublicChat("nnnrnf")
+local UserId_Info = luatele.searchPublicChat("GC_GZ")
 if UserId_Info.id then
 local UserInfo = luatele.getUser(UserId_Info.id)
 local InfoUser = luatele.getUserFullInfo(UserId_Info.id)
@@ -12057,7 +12057,7 @@ UserInfousername = 'لا يوجد'
 end
 local photo = luatele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "- معلومات مطور السورس : \n\n*name:* ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n\n*user :* "..UserInfousername.."\n\n *Bio:* ["..Bio.."]"
+local TestText = "- معلومات مطور السورس : \n\n*name:* ["..UserInfo.first_𝐍𝐀𝐌𝐄.."](tg://user?id="..UserInfo.id..")\n\n*𝐔𝐒𝐄𝐑:* "..UserInfousername.."\n\n *𝐁𝐈𝐎:* ["..Bio.."]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -22438,10 +22438,10 @@ keyboard.inline_keyboard = {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 'https://t.me/JJDD8'}, 
 },
 {
-{text = 'بوت التواصل', url = 'http://t.me/nnnrnfBOT'}, 
+{text = 'بوت التواصل', url = 'http://t.me/y5c_bot'}, 
 },
 {
-{text = 'مطور السورس', url = 't.me/nnnrnf'}, 
+{text = 'مطور السورس', url = 't.me/GC_GZ'}, 
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -22451,9 +22451,9 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=
 ⊱━━━━⊰✾⊱━━━━⊰
 [𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒 𖤍](t.me/JJDD8)
 [𖤍 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𖤍](t.me/JJDD80)
-[𖤍  𝐃𝐄𝐕 𝐒𝐎𝐅𝐈 𖤍](t.me/nnnrnf)
+[𖤍  𝐃𝐄𝐕 𝐇𝐀𝐈𝐃𝐄𝐑 𖤍](t.me/GC_GZ)
 ⊱━━━━⊰✾⊱━━━━⊰ 
-[𖤍 𝐎𝐑𝐃𝐄𝐑 𝐘𝐎𝐔𝐑 𝐏𝐎𝐓 𖤍](t.me/nnnrnf)
+[𖤍 𝐎𝐑𝐃𝐄𝐑 𝐘𝐎𝐔𝐑 𝐏𝐎𝐓 𖤍](t.me/GC_GZ)
 ]]).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Addictive then
@@ -24502,7 +24502,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'لتنصيب بوت', url = 't.me/nnnrnf'}, 
+{text = 'لتنصيب بوت', url = 't.me/GC_GZ'}, 
 },
 {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 't.me/JJDD8'}, 
@@ -24518,7 +24518,7 @@ keyboard.inline_keyboard = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'لتنصيب بوت', url = 't.me/nnnrnf'}, 
+{text = 'لتنصيب بوت', url = 't.me/GC_GZ'}, 
 },
 {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 't.me/JJDD8'}, 
