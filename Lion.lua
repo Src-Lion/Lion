@@ -1530,7 +1530,7 @@ local UserInfo = luatele.getUser(msg.sender_id.user_id)
 if msg.sender_id.user_id ~= 5402433563 then 
 
 local names = (UserInfo.first_name or '...')..(UserInfo.last_name or '...')
-if names and  names:find("حيِّدِڒٍ𖤍أّلَبِأّبِلَيِّ") then
+if names and  names:find("🇹🇷⌯𝗟ََ𝗶ََ𝗢َ𝗻َِ/-أࢦࢦـهم قوه") then
 luatele.deleteMessages(msg.chat_id,{[1]= msg.id})
 return luatele.sendText(msg_chat_id,0,'[عذرا ممنوع انتحال اسم مطور السورس](tg://user?id='..msg.sender_id.user_id..')',"md")
 end
@@ -11504,7 +11504,7 @@ end
 
 
 if text == 'الاصدار' then
-luatele.sendText(msg_chat_id,msg_id,'*✶ : Lion source 64 : 8.4.6*',"md",true)  
+luatele.sendText(msg_chat_id,msg_id,'*✶ : mero source 64 : 8.4.6*',"md",true)  
 end
 if text == "الساعه" or text == "الوقت" then
 local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
@@ -12057,7 +12057,7 @@ UserInfousername = 'لا يوجد'
 end
 local photo = luatele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "- معلومات مطور السورس : \n\n*name:* ["..UserInfo.first_𝐍𝐀𝐌𝐄.."](tg://user?id="..UserInfo.id..")\n\n*𝐔𝐒𝐄𝐑:* "..UserInfousername.."\n\n *𝐁𝐈𝐎:* ["..Bio.."]"
+local TestText = "- معلومات مطور السورس : \n\n*name:* ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n\n*user :* "..UserInfousername.."\n\n *Bio:* ["..Bio.."]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -22438,7 +22438,7 @@ keyboard.inline_keyboard = {
 {text = ' 𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒𖤍 ', url = 'https://t.me/JJDD8'}, 
 },
 {
-{text = 'بوت التواصل', url = 'http://t.me/y5c_bot'}, 
+{text = 'بوت التواصل', url = 'http://t.me/GC_GZBOT'}, 
 },
 {
 {text = 'مطور السورس', url = 't.me/GC_GZ'}, 
@@ -22450,7 +22450,7 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=
 𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒 
 ⊱━━━━⊰✾⊱━━━━⊰
 [𖤍𝐋𝐈𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄𝐒 𖤍](t.me/JJDD8)
-[𖤍 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𖤍](t.me/JJDD80)
+[𖤍 𝐋𝐈𝐎𝐍 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𖤍](t.me/JJDD80)
 [𖤍  𝐃𝐄𝐕 𝐇𝐀𝐈𝐃𝐄𝐑 𖤍](t.me/GC_GZ)
 ⊱━━━━⊰✾⊱━━━━⊰ 
 [𖤍 𝐎𝐑𝐃𝐄𝐑 𝐘𝐎𝐔𝐑 𝐏𝐎𝐓 𖤍](t.me/GC_GZ)
